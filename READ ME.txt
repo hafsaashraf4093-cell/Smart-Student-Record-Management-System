@@ -1,0 +1,77 @@
+Smart Student Record Management System (SSRMS)
+==============================================
+
+Project Overview
+----------------
+Smart Student Record Management System (SSRMS) is a desktop application built
+using Python (Tkinter for GUI) and Oracle Database as backend. It provides a
+centralized way to manage student records, departments, courses, results, and
+attendance. The system supports full CRUD (Create, Read, Update, Delete) and
+search functionality for each module.
+
+Modules
+-------
+1. Students
+   - Roll No, First Name, Last Name, Gender, DOB, Email, Phone, Address,
+     Department, Semester
+2. Departments
+   - Dept ID, Dept Name, HOD Name, HOD Email
+3. Courses
+   - Course ID, Course Name, Credits, Description
+4. Results
+   - Roll No, Course, Grade, Remarks
+5. Attendance
+   - Roll No, Course, Attendance %, Present Days, Total Days
+6. Users (for login)
+   - User ID, Username, Password, Role
+
+Features
+--------
+- Secure login system using Users table
+- Elegant Tkinter dashboard with sidebar navigation
+- CRUD operations for all modules
+- Search functionality by primary key
+- Oracle Database integration
+- Consistent UI styling and error handling
+
+Requirements
+------------
+- Python 3.x
+- cx_Oracle library
+- Oracle Database (XE or higher)
+- Tkinter (comes with Python)
+
+Setup Instructions
+------------------
+1. Install Oracle Database and create schema/tables as per project SQL.
+2. Install Python 3.x and cx_Oracle library:
+   pip install cx_Oracle
+3. Update DB credentials in `main.py`:
+   DB_HOST = "localhost"
+   DB_PORT = 1521
+   DB_SERVICE = "XE"
+   DB_USER = "HR"
+   DB_PASSWORD = "12345678"
+4. Run the application:
+   python main.py
+5. Login with default credentials:
+   Username: admin
+   Password: admin123
+
+Usage
+-----
+- Navigate through sidebar to access modules.
+- Use forms to add/update/delete records.
+- Use search to quickly find records by Roll No or ID.
+- Results and Attendance are linked to Students via Roll No.
+
+Project Details
+---------------
+University: IUB Bahawalpur, Baghdad Campus
+Program: BS Software Engineering
+Semester: 4th
+Section: 2M
+Subject: Database Systems
+project By: Hafsa Ashraf[S24BSEEN1M01112],
+             
+
